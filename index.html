@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <title>Testerd Sahur Detect</title>
   <style>
-    html, body, iframe {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
       border: none;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 3em;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
     }
   </style>
   <script>
@@ -20,5 +39,8 @@
 </head>
 <body>
   <iframe src="https://toontoondancer.vercel.app/" frameborder="0"></iframe>
+  <div class="overlay">
+    NEVERFALL DETECT BUY
+  </div>
 </body>
 </html>
